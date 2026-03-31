@@ -566,7 +566,7 @@ button { cursor: pointer; font-family: inherit; }
   gap: 20px;
 }
 .atletas__grid--6 {
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 }
 .atleta-card {
   border-radius: 16px;
