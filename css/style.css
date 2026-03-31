@@ -491,6 +491,37 @@ button { cursor: pointer; font-family: inherit; }
 }
 .servico-card__bullets li:last-child { border-bottom: none; }
 
+/* ── BOTA PNEUMÁTICA ── */
+.bota { padding: 108px 0; background: var(--bg-alt); }
+.bota__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 28px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+.bota__img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: var(--shadow-lg);
+}
+.bota__beneficios { margin: 28px 0 32px; display: flex; flex-direction: column; gap: 20px; }
+.bota__beneficio { display: flex; align-items: flex-start; gap: 16px; }
+.bota__beneficio-icon {
+  width: 44px; height: 44px;
+  border-radius: 10px;
+  background: var(--accent-alpha);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--accent-dark);
+  flex-shrink: 0;
+}
+.bota__beneficio-title { font-family: var(--headline); font-size: 1.1rem; font-weight: 700; color: var(--text); margin-bottom: 4px; }
+.bota__beneficio-text { font-size: 0.88rem; color: var(--text-sec); line-height: 1.65; }
+
 /* ── PRÊMIO / MELHOR CLÍNICA ── */
 .premio { padding: 108px 0; background: var(--hero-bg); }
 .premio__container {
@@ -533,6 +564,9 @@ button { cursor: pointer; font-family: inherit; }
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
+}
+.atletas__grid--6 {
+  grid-template-columns: repeat(3, 1fr);
 }
 .atleta-card {
   border-radius: 16px;
@@ -671,7 +705,9 @@ button { cursor: pointer; font-family: inherit; }
   .como__grid { grid-template-columns: repeat(2, 1fr); }
   .serv__grid { grid-template-columns: repeat(2, 1fr); }
   .atletas__grid { grid-template-columns: repeat(2, 1fr); }
+  .atletas__grid--6 { grid-template-columns: repeat(2, 1fr); }
   .sobre__container { gap: 48px; }
+  .bota__container { gap: 48px; }
   .premio__container { gap: 48px; }
   .numero-item { padding: 36px 48px; }
 }
@@ -697,6 +733,7 @@ button { cursor: pointer; font-family: inherit; }
   .hero__overlay { background: linear-gradient(to top, rgba(9,9,9,0.96) 0%, transparent 100%); }
   .hero__content { align-items: flex-end; display: flex; min-height: 100vh; padding-bottom: 60px; }
   .sobre__container { grid-template-columns: 1fr; }
+  .bota__container { grid-template-columns: 1fr; }
   .vilao__points { grid-template-columns: 1fr; }
   .pq__grid { grid-template-columns: repeat(2, 1fr); }
   .serv__grid { grid-template-columns: 1fr; }
@@ -709,7 +746,7 @@ button { cursor: pointer; font-family: inherit; }
   .numero-item:last-child { border-bottom: none; }
   .depo-destaque { padding: 48px 32px; }
   .depo-destaque__quote-mark { font-size: 6rem; top: 20px; left: 28px; }
-  .sobre, .como-funciona, .para-quem, .servicos, .atletas, .faq, .premio { padding: 72px 0; }
+  .sobre, .como-funciona, .para-quem, .servicos, .bota, .atletas, .faq, .premio { padding: 72px 0; }
   .depoimento-destaque { padding: 56px 0; }
 }
 
@@ -718,7 +755,8 @@ button { cursor: pointer; font-family: inherit; }
   .pq__grid { grid-template-columns: 1fr; }
   .como__grid { grid-template-columns: 1fr; }
   .atletas__grid { grid-template-columns: 1fr; }
-  .sobre, .como-funciona, .para-quem, .servicos, .atletas, .faq, .premio { padding: 56px 0; }
+  .atletas__grid--6 { grid-template-columns: 1fr; }
+  .sobre, .como-funciona, .para-quem, .servicos, .bota, .atletas, .faq, .premio { padding: 56px 0; }
   .depo-destaque { padding: 36px 22px; }
   .cta-final { padding: 80px 0; }
 }
